@@ -1,0 +1,3 @@
+prometheus_client
+https://codeload.github.com/aristanetworks/cloudvision-python/tar.gz/refs/tags/v1.1.0
+requests

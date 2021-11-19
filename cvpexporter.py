@@ -105,7 +105,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="expose metrics from CVP through Prometheus. This is very experimental")
     parser.add_argument("-t", "--tokenFile", help="path to a file containing the token, previously acquired with get_token.py", required=True)  
     parser.add_argument("-c", "--caFile", help="server certificate if not trusted, previously acquired with get_token.py --ssl") 
-    parser.add_argument("-v", "--cvp", help="cvp service to connect to (eg: privatecvp:8443)", default="www.arista.io:443") 
+    parser.add_argument("-v", "--cvp", help="cvp service to connect to (eg: privatecvp:8443)", default="apiserver.arista.io:443")
     parser.add_argument("-s", "--server", help="run in server mode, listen for traffic", action="store_true", default=False)
     parser.add_argument("-p", "--port", help="when running in server mode, listen on this port",  type=int, default=8000)
     parser.add_argument("-d", "--debug", help="activate debug logs", action="store_true", default=False)
